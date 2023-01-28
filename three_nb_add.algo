@@ -1,0 +1,30 @@
+ALGORITHM three_nb_add
+VAR
+    sen :  string ;
+     k:INTEGER:=0;
+     i : INTEGER:=0;
+     j : INTEGER:=0;
+     mot: INTEGER:=1;
+     voye : INTEGER :=0;
+     long : INTEGER := 1
+BEGIN
+WHILE (sen[i]<>".") DO
+    long :=long+1
+    i:=i+1;
+   END_WHILE
+   write (long)
+
+ FOR j FROM 0 TO long STEP 1  DO
+    IF (sen[j]=" ") THEN
+        mot:=mot+1;
+    END_IF
+   END_FOR
+ write (mot)
+
+ FOR k FROM 0 TO long STEP 1  DO
+   IF (sen[k]="a" OR sen[k]="e" OR sen[k]="i" OR sen[k]="y" OR sen[k]="o" OR sen[k]="u" OR ) THEN
+    voye :=voye+1;
+   END_IF
+write (voye)
+
+END
